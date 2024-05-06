@@ -1,0 +1,112 @@
+main .categories-block {
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main .category-link {
+  display: inline-block;
+  margin: 20px;
+}
+main .category-link img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .category-link .category-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+main .category-link .champion {
+  width: 75%;
+}
+main .category-link .sport-goods {
+  width: 25%;
+}
+main .category-link .forwards, main .category-link .defenders {
+  width: 50vw;
+}
+main .guarantees-block {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main h2 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+main .guarantees-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .guarantee-block {
+  position: relative;
+  width: 18vw;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+main .guarantee-block img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+  fill: orange;
+  stroke: orange;
+}
+main .guarantee-block h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .guarantee-block p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+main .recommended-block {
+  display: flex;
+  overflow-x: auto;
+}
+main .recommended-block a {
+  text-decoration: none;
+  color: #000;
+}
+main .recommended-block .card {
+  width: 300px;
+  height: 430px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .recommended-block .card img {
+  width: 300px;
+  height: 300px;
+}
+main .recommended-block .card h3 {
+  margin: 10px 0;
+}
+main .recommended-block .card p {
+  margin: 0;
+  font-size: 24px;
+}
+main .recommended-block .card small {
+  font-size: 14px;
+  color: #666;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+.logo{
+  opacity: 1;
+  fill-opacity: 0 ;
+  stroke: #fd8210;
+  
+  stroke-dasharray: none;
+}
+
+
+@import "_variables";
+@import "_mixin";
+@import "main";
+
+@import "header";
+@import "footer";
