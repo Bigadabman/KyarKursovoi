@@ -4,101 +4,113 @@
 <catalog>
 
 <players>
-    <attakers>
+    <item>
         <name>Криштиану Роналду</name>
         <price>15 млн</price>
         <description>Криштиану Роналду (род. 5 февраля 1985, Фуншал, Португалия) — португальский футболист, нападающий, капитан саудовского клуба «Ан-Наср» и сборной Португалии. Чемпион Европы. Считается одним из лучших футболистов всех времён.</description>
-        <img>ronaldu.jpg</img>
+        <img>players/attakers/ronaldu.jpg</img>
         <rec>1</rec>
-    </attakers>
+        <category>Нападающие</category>
+    </item>
     
-    <attakers>
+    <item>
         <name>Лионель Месси</name>
         <price>20 млн</price>
         <description>Лионель Андреас Месси — аргентинский футболист, нападающий клуба «Пари Сен-Жермен» и сборной Аргентины. Шестькратный обладатель Золотого мяча.</description>
         <rec>0</rec>
-        <img>orangeBall.jpg</img>
-    </attakers>
+        <img>players/attakers/messi.jpg</img>
+        <category>Нападающие</category>
+    </item>
 
-    <attakers>
+    <item>
         <name>Неймар</name>
         <price>18 млн</price>
         <description>Неймар да Силва Сантос Жуниор, более известный как Неймар — бразильский футболист, нападающий клуба «Пари Сен-Жермен» и сборной Бразилии.</description>
         <rec>1</rec>
-                <img>orangeBall.jpg</img>
-    </attakers>
+                <img>players/attakers/neimar.jpg</img>
+                <category>Нападающие</category>
+    </item>
 
-    <attakers>
+    <item>
         <name>Роберт Левандовски</name>
         <price>25 млн</price>
         <description>Роберт Левандовски — польский футболист, нападающий клуба «Бавария» и сборной Польши. Обладатель Золотой обуви за сезон 2020/2021.</description>
         <rec>0</rec>
-                <img>orangeBall.jpg</img>
-    </attakers>
+                <img>players/attakers/levandovski.jpg</img>
+                <category>Нападающие</category>
+    </item>
 
-    <attakers>
+    <item>
         <name>Килиан Мбаппе</name>
         <price>22 млн</price>
         <description>Килиан Эмбаппе — французский футболист, нападающий клуба «Пари Сен-Жермен» и сборной Франции. Обладатель Кубка мира FIFA 2018 года.</description>
         <rec>1</rec>
-                <img>orangeBall.jpg</img>
-    </attakers>
+                <img>players/attakers/mbappe.png</img>
+                <category>Нападающие</category>
+    </item>
 
-    <defenders>
+    <item>
         <name>Вирджил ван Дейк</name>
         <price>20 млн</price>
         <description>Вирджил ван Дейк — нидерландский футболист, защитник клуба «Ливерпуль» и сборной Нидерландов. Обладатель Золотого мяча 2019 года.</description>
         <rec>0</rec>
-                <img>orangeBall.jpg</img>
-    </defenders>
+                <img>players/defenders/deik.jpg</img>
+                <category>Защитники</category>
+    </item>
 
-    <defenders>
+    <item>
         <name>Серхио Рамос</name>
         <price>18 млн</price>
         <description>Серхио Рамос — испанский футболист, защитник клуба «Пари Сен-Жермен» и сборной Испании. Двукратный чемпион Европы.</description>
         <rec>1</rec>
-                <img>orangeBall.jpg</img>
-    </defenders>
+                <img>players/defenders/ramos.jpg</img>
+                <category>Защитники</category>
+    </item>
 
-    <defenders>
+    <item>
         <name>Трент Александр-Арнольд</name>
         <price>15 млн</price>
         <description>Трент Александр-Арнольд — английский футболист, защитник клуба «Ливерпуль» и сборной Англии. Обладатель Лиги чемпионов 2018/2019 года.</description>
         <rec>0</rec>
-                <img>orangeBall.jpg</img>
-    </defenders>
+                <img>players/defenders/trent.jpg</img>
+                <category>Защитники</category>
+    </item>
 
-    <defenders>
+    <item>
         <name>Аймерик Лапорт</name>
-        <price>16 млн</price>
+        <price>16 млн</price>players/
         <description>Аймерик Лапорт — французский футболист, защитник клуба «Манчестер Сити». Двукратный чемпион Англии.</description>
         <rec>1</rec>
-                <img>orangeBall.jpg</img>
-    </defenders>
+                <img>players/defenders/laport.jpg</img>
+                <category>Защитники</category>
+    </item>
 
-    <defenders>
+    <item>
         <name>Андерсон Люш</name>
         <price>12 млн</price>
         <description>Андерсон Люш — бразильский футболист, защитник клуба «Локомотив Москва». Двукратный чемпион России.</description>
         <rec>1</rec>
-                <img>orangeBall.jpg</img>
-    </defenders>
+                <img>players/defenders/lush.jpeg</img>
+                <category>Защитники</category>
+    </item>
 
-    <goalkeepers>
+    <item>
         <name>Ян Облак</name>
         <price>30 млн</price>
         <description>Ян Облак — словенский футболист, вратарь клуба «Атлетико Мадрид» и сборной Словении. Пятикратный победитель Примеры.</description>
         <rec>0</rec>
-                <img>orangeBall.jpg</img>
-    </goalkeepers>
+                <img>players/goalkeepers/oblak.jpg</img>
+                <category>Вратари</category>
+    </item>
 
-    <goalkeepers>
+    <item>
         <name>Тибо Куртуа</name>
         <price>25 млн</price>
         <description>Тибо Куртуа — бельгийский футболист, вратарь клуба «Реал Мадрид» и сборной Бельгии. Обладатель Кубка мира FIFA 2018 года.</description>
         <rec>1</rec>
-        <img>orangeBall.jpg</img>
-        </goalkeepers>
+        <img>players/goalkeepers/tiba.jpg</img>
+        <category>Вратари</category>
+        </item>
 
 </players>
 
@@ -111,7 +123,7 @@
         <description>Новая тренировочная версия топового мяча Brillant Super TB.</description>
         <availability>Есть в наличии</availability>
         <rec>0</rec>
-        <img>orangeBall.jpg</img>
+        <img>goods/balls/orangeball.jpg</img>
         <category>Мячи</category>
     </item>
 
@@ -123,7 +135,7 @@
         <description>Официальный мяч Лиги чемпионов УЕФА.</description>
         <availability>Есть в наличии</availability>
         <rec>1</rec>
-        <img>orangeBall.jpg</img>
+        <img>goods/balls/adidas.jpg</img>
         <category>Мячи</category>
     </item>
 
@@ -135,7 +147,7 @@
         <description>Спортивный мяч Nike Merlin.</description>
         <availability>Есть в наличии</availability>
         <rec>0</rec>
-        <img>orangeBall.jpg</img>
+        <img>goods/balls/nike.jpg</img>
         <category>Мячи</category>
     </item>
 
@@ -147,7 +159,7 @@
         <description>Мяч Puma Future Flare.</description>
         <availability>Есть в наличии</availability>
         <rec>1</rec>
-        <img>orangeBall.jpg</img>
+        <img>goods/balls/puma.jpg</img>
         <category>Мячи</category>
     </item>
 
@@ -159,7 +171,7 @@
         <description>Новая модель футбольных бутс от Nike.</description>
         <availability>Есть в наличии</availability>
         <rec>0</rec>
-        <img>orangeBall.jpg</img>
+        <img>goods/boots/nike.jpg</img>
         <category>Бутсы</category>
     </item>
 
@@ -171,7 +183,7 @@
         <description>Ультралегкие бутсы Adidas X Ghosted.</description>
         <availability>Есть в наличии</availability>
         <rec>1</rec>
-        <img>orangeBall.jpg</img>
+        <img>goods/boots/adidas.jpg</img>
         <category>Бутсы</category>
     </item>
 
@@ -183,7 +195,7 @@
         <description>Бутсы Puma Ultra 1.2.</description>
         <availability>Есть в наличии</availability>
         <rec>0</rec>
-                <img>orangeBall.jpg</img>
+                <img>goods/boots/puma.jpg</img>
                 <category>Бутсы</category>
     </item>
 
@@ -195,7 +207,7 @@
         <description>Новая коллекция бутс от New Balance.</description>
         <availability>Есть в наличии</availability>
         <rec>1</rec>
-                <img>orangeBall.jpg</img>
+                <img>goods/boots/NB.jpg</img>
                 <category>Бутсы</category>
     </item>
 
@@ -207,7 +219,7 @@
         <description>Комфортные шорты для игры в футбол.</description>
         <availability>Есть в наличии</availability>
         <rec>0</rec>
-                <img>orangeBall.jpg</img>
+                <img>goods/shorts/nike.jpg</img>
                 <category>Шорты</category>
     </item>
 
@@ -219,7 +231,7 @@
         <description>Классические футбольные шорты от Adidas.</description>
         <availability>Есть в наличии</availability>
         <rec>1</rec>
-                <img>orangeBall.jpg</img>
+                <img>goods/shorts/adidas.jpg</img>
                 <category>Шорты</category>
     </item>
 
@@ -231,7 +243,7 @@
         <description>Легкая майки для игры в футбол.</description>
         <availability>Есть в наличии</availability>
         <rec>0</rec>
-                <img>orangeBall.jpg</img>
+                <img>goods/T-shirts/nike.png</img>
                 <category>Майки</category>
     </item>
 
@@ -243,7 +255,7 @@
         <description>Стандартная майки для тренировок.</description>
         <availability>Есть в наличии</availability>
         <rec>1</rec>
-            <img>orangeBall.jpg</img>
+            <img>goods/T-shirts/adidas.jpg</img>
             <category>Майки</category>
     </item>
 

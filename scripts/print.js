@@ -14,6 +14,7 @@ navSubmenuLinks.forEach(link => {
     if (xmlhttp.status === 200) {
       const xmlDoc = xmlhttp.responseXML;
       const items = xmlDoc.getElementsByTagName("item");
+
       const listBlock = document.querySelector('.list');
       listBlock.innerHTML = '';
 
