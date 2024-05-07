@@ -18,6 +18,7 @@ main .categories-block a {
   display: inline-block;
   margin: 5px;
   height: 375px;
+  border-radius: 30px;
 }
 main .categories-block a img {
   display: block;
@@ -54,11 +55,11 @@ main .categories-block div .forwards, main .categories-block div .defenders {
   flex: 1;
 }
 main .guarantees-block {
-  margin: 20px auto;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
   background-color: #f7f7f7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100vw;
+  width: 95vw;
 }
 main h2 {
   margin-top: 0;
@@ -72,11 +73,12 @@ main .guarantees-grid {
 }
 main .guarantee-block {
   position: relative;
-  width: 15vw;
+  width: 20vw;
+  min-width: 300px;
+  max-width: 450px;
   background-color: #fff;
   border-radius: 10px;
-  overflow: hidden;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 main .guarantee-block img {

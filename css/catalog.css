@@ -31,4 +31,41 @@ a {
 .card small {
   font-size: 14px;
   color: #666;
+}
+
+.cont {
+  display: flex;
+}
+.cont div:has(.sidebar) {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+}
+.cont div:has(.sidebar) .nav-item .nav-link {
+  font-size: 24px;
+}
+.cont div:has(.sidebar) .nav-item a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 1px black solid;
+  margin: 0;
+  text-align: center;
+}
+.cont div:has(.sidebar) .nav-item .nav-submenu-link {
+  width: 90%;
+}
+.cont div:has(.sidebar) .nav-item .nav-submenu {
+  display: none;
+}
+.cont .list {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.cont .list .card {
+  display: inline-block;
+  margin: 10px;
 }/*# sourceMappingURL=catalog.css.map */
