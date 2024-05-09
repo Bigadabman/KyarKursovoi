@@ -1,52 +1,50 @@
+main {
+  margin: 0.5em;
+}
 main .categories-block {
   background-color: #f7f7f7;
-  margin: 15px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 main .categories-block a {
-  display: inline-block;
-  margin: 5px;
-  height: 375px;
+  display: block;
+  margin: 0.3em;
+  height: 57vh;
   border-radius: 30px;
 }
 main .categories-block a img {
-  display: block;
+  display: inline;
   border-radius: 10px;
   width: 100%;
   height: 100%;
 }
-main .categories-block div {
-  display: flex;
-  justify-content: space-between;
-}
-main .categories-block div .champion {
-  flex: 3;
+main .categories-block .champion {
+  width: 61vw;
   position: relative;
-  height: 375px;
 }
-main .categories-block div .category-name {
+main .categories-block .category-name {
   position: absolute;
   top: 5%;
   left: 5%;
   font-weight: bold;
-  font-size: 18px;
-  color: #000;
+  font-size: 2em;
+  color: #fd8210;
   text-decoration: none;
 }
-main .categories-block div .sport-goods {
-  flex: 1;
+main .categories-block .sport-goods {
+  width: 33vw;
   position: relative;
-  height: 100%;
 }
-main .categories-block div .forwards, main .categories-block div .defenders {
+main .categories-block .forwards, main .categories-block .defenders {
   position: relative;
-  height: 100%;
-  flex: 1;
+  width: 47vw;
 }
 main .guarantees-block {
   margin: 10px;
   padding: 10px;
   background-color: #f7f7f7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 95vw;
 }
 main h2 {
@@ -61,13 +59,14 @@ main .guarantees-grid {
 }
 main .guarantee-block {
   position: relative;
-  width: 17vw;
-  min-width: 300px;
+  width: 20vw;
+  min-width: 250px;
   max-width: 450px;
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
+  margin: 10px;
 }
 main .guarantee-block img {
   width: 80px;
@@ -107,7 +106,7 @@ main .recommended-block .card {
   align-items: center;
 }
 main .recommended-block .card img {
-  width: 290px;
+  width: 100%;
   height: 250px;
 }
 main .recommended-block .card h3 {
