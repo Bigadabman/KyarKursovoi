@@ -8,15 +8,14 @@
 .logo{
   opacity: 1;
   fill-opacity: 0 ;
-  stroke: #fd8210;
-  
+  stroke: $orange;
+  font-family: Helvetica, Arial, sans-serif;
   stroke-dasharray: none;
 }
 
 
-@import "_variables";
+@import "variables";
 @import "_mixin";
 @import "main";
-
 @import "header";
 @import "footer";

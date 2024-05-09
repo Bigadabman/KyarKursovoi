@@ -1,11 +1,11 @@
 .itemInfo {
+  padding: 0px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .itemInfo .imgBlock {
-  display: inline-block;
   width: 600px;
   flex: 1;
 }
@@ -14,7 +14,16 @@
   height: 100%;
 }
 .itemInfo .info {
+  padding: 10px 20px;
   flex: 1;
-  display: inline-block;
   width: 600px;
+}
+.itemInfo .info button {
+  height: 40px;
+  width: 90%;
+  background: #fd8210;
+  border: 0;
+  border-radius: 20px;
+  font-size: 30px;
+  color: #f7f7f7;
 }/*# sourceMappingURL=itemCard.css.map */

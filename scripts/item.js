@@ -33,3 +33,11 @@ const p2 = document.createElement('p');
           cont.appendChild(p2);
 
           infoBlock.appendChild(cont);
+
+const button =document.createElement('button');
+button.textContent='Заказать';
+
+const a=document.createElement('a');
+a.href='form.html';
+a.appendChild(button);
+cont.appendChild(a);
