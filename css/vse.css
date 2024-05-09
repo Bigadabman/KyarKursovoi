@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #f7f7f7;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  opacity: 1;
+  fill-opacity: 0;
+  stroke: #fd8210;
+  stroke-dasharray: none;
+}
+
+main {
+  margin: 0.5em;
+}
+main .categories-block {
+  background-color: #f7f7f7;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .categories-block a {
+  display: block;
+  margin: 0.3em;
+  height: 57vh;
+  border-radius: 30px;
+}
+main .categories-block a img {
+  display: inline;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+main .categories-block .champion {
+  width: 61vw;
+  position: relative;
+}
+main .categories-block .category-name {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-weight: bold;
+  font-size: 2em;
+  color: #fd8210;
+  text-decoration: none;
+}
+main .categories-block .sport-goods {
+  width: 33vw;
+  position: relative;
+}
+main .categories-block .forwards, main .categories-block .defenders {
+  position: relative;
+  width: 47vw;
+}
+main .guarantees-block {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  width: 95vw;
+}
+main h2 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+main .guarantees-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .guarantee-block {
+  position: relative;
+  width: 20vw;
+  min-width: 250px;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+main .guarantee-block img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+  fill: orange;
+  stroke: orange;
+}
+main .guarantee-block h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .guarantee-block p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+main .recommended-block {
+  display: flex;
+  overflow-x: auto;
+}
+main .recommended-block a {
+  text-decoration: none;
+  color: #000;
+}
+main .recommended-block .card {
+  width: 290px;
+  height: 380px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .recommended-block .card img {
+  width: 100%;
+  height: 250px;
+}
+main .recommended-block .card h3 {
+  margin: 10px 0;
+}
+main .recommended-block .card p {
+  margin: 0;
+  font-size: 24px;
+}
+main .recommended-block .card small {
+  font-size: 14px;
+  color: #666;
+}
+
+header {
+  width: 100wv;
+  padding: 12px;
+}
+header div:nth-child(2) {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div:nth-child(2) div {
+  flex: 1;
+}
+header div:nth-child(2) nav {
+  flex: 1;
+}
+header div:nth-child(2) nav li {
+  display: inline-block;
+}
+header div:nth-child(2) nav li .nav-submenu {
+  z-index: 2;
+  position: absolute;
+  display: none;
+}
+header div:nth-child(2) nav li .nav-submenu .nav-submenu-link {
+  display: block;
+  margin: 0;
+}
+header div:nth-child(2) nav li .nav-item:hover .nav-submenu {
+  display: block;
+}
+header div:nth-child(2) nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 20px;
+}
+header div:nth-child(2) a img {
+  flex: 1;
+  width: 28px;
+  height: 28px;
+}
+header h2 {
+  color: white;
+  size: 21px;
+  color: white;
+  width: 100vw;
+  height: 50px;
+  text-align: center;
+  background-color: #111;
+}
+
+footer {
+  width: 85vw;
+  height: 160px;
+  padding: 50px;
+  background-color: #111;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+footer span {
+  display: block;
+}
+footer div:has(span) {
+  color: white;
+}
+footer a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+footer a:hover {
+  filter: brightness(2);
+}
+footer a img {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+footer > div > div {
+  display: inline-block;
+  align-self: top;
+}/*# sourceMappingURL=vse.css.map */

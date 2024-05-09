@@ -1,0 +1,22 @@
+@import "_variables";
+
+*{
+  margin:0;
+  padding: 0;
+}
+html{
+  background-color: #f7f7f7;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.logo{
+  opacity: 1;
+  fill-opacity: 0; 
+  stroke: $orange;
+  stroke-dasharray: none;
+}
+
+@import "_mixin";
+@import "main";
+@import "_header";
+@import "_footer";

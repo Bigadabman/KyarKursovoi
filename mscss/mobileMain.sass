@@ -1,0 +1,103 @@
+@import "../scss/_mixin"
+@import "../scss/_variables"
+@import "_Mheader"
+@import "_Mfooter"
+
+
+main
+    .categories-block
+        background-color: #f7f7f7
+        margin: 0.5rem
+        display: flex
+        justify-content: space-around
+        flex-wrap: row
+        overflow-x: scroll
+
+        a
+            display: block
+            margin: 0.3em
+            height: 57vh
+            min-width: 300px
+            border-radius: 10px   
+            overflow: hidden
+            
+            img
+                display: inline
+                border-radius: 10px
+                height: 100%
+                position: relative
+                left:-100%
+        
+        .champion
+            
+            position: relative
+
+
+        .category-name
+            position: absolute
+            align-self: center
+            font-weight: bold
+            font-size: 2em
+            color: $orange
+            text-decoration: none
+            left: 30%
+            z-index: 2
+
+
+        .sport-goods
+            
+            position: relative
+
+        .forwards, .defenders
+            position: relative
+            
+
+    .guarantees-block
+        margin: 10px
+        padding: 10px
+        background-color: #f7f7f7
+        width:95vw
+    h2
+        margin-top: 0
+        font-weight: bold
+        font-size: 18px
+
+    .guarantees-grid
+        display: flex
+        flex-direction: column
+        align-content: center
+        flex-wrap: wrap
+
+    .guarantee-block
+        position: relative
+        width: 70vw
+        background-color: #fff
+        border-radius: 10px
+        padding: 10px
+        text-align: center
+        margin: 10px
+
+        img
+            width: 40px
+            height: 40px
+            object-fit: cover
+            margin-bottom: 20px
+            fill: orange
+            stroke: orange
+
+        h3
+            font-weight: bold
+            font-size: 18px
+            margin-bottom: 10px
+
+        p
+            font-size: 14px
+            color: #666
+            line-height: 1.5
+
+    .recommended-block 
+        display: flex
+        overflow-x: auto
+        
+        @include card
+        
