@@ -1,3 +1,3 @@
 # EliteFooty
 
-[Главная страница(О нас)](https://bigadabman.github.io/KyarKursovoi/index.html)
+[Главная страница](https://bigadabman.github.io/KyarKursovoi/index.html)
