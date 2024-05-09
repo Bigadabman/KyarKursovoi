@@ -106,8 +106,8 @@ main .recommended-block .card {
   align-items: center;
 }
 main .recommended-block .card img {
-  width: 100%;
   height: 250px;
+  width: 290px;
 }
 main .recommended-block .card h3 {
   margin: 10px 0;
