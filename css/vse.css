@@ -148,6 +148,9 @@ header div:nth-child(2) {
   justify-content: space-between;
   align-items: center;
 }
+header div:nth-child(2) #burger-toggle {
+  display: none;
+}
 header div:nth-child(2) div {
   flex: 1;
 }

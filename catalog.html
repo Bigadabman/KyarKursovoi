@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
-    <link rel="stylesheet" href="css/vse.css">
-    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" media="only screen and (min-width: 1280px)" href="css/vse.css">
+   
+    <link rel="stylesheet" media="only screen and (min-width: 1280px)" href="css/catalog.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/Mcatalog.css">
 </head>
 <body>
     <header>
@@ -42,12 +44,21 @@
                </a>
             </div>
 
-            <nav class="nav-links">
-                <a href="#">Нападающие</a>
-                <a href="#">Защитники</a>
-                <a href="#">Чемпионы</a>
-                <a href="#">Спорт товары</a>
-            </nav>
+            <nav class="nav-links" id="nav">
+              <input type="checkbox" id="burger-toggle" />
+  <label for="burger-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+              <ul>             
+              <li><a href="catalog.html">Нападающие</a></li>
+              <li><a href="catalog.html">Защитники</a></li>
+              <li><a href="catalog.html">Вратари</a></li>
+              <li><a href="catalog.html">Мячи</a></li>
+            </ul>
+
+          </nav>
                 
             <a href="#">
                 <img src="svg/cart.svg" alt="Корзина">

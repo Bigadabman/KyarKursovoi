@@ -1,13 +1,62 @@
 header
     width:100vw
     img
-        width:27px
-        heigth:27px
+        width: 27px
+        height: 27px
+    
+    a:has(img)
+        position: absolute
+        top: 1.5vh
+        right: 18vw
 
-    &:nth-child(1)
-        display: none
+    div:has(h2)
+        display: none        
     
     &:nth-child(2)
+        display: flex
+        div
+            max-width: 50px
+    
+    #nav
+        position: relative
 
-        
-        
+        ul
+            position: fixed
+            list-style: none
+            z-index: 3
+            left:-51vw
+            width: 40vw
+            background-color: $blue
+            padding: 2vh
+            top: -2vh
+            height: 100vh
+            line-height: 2em
+            transition: left 0.3s ease-in-out
+            a
+                text-decoration: none
+                color: #f7f7f7
+                font-size: x-large
+    #burger-toggle
+        display: none
+
+        &+label
+            display: block
+            position: relative
+            top: -6vh
+            right: -85vw
+            width: -moz-fit-content
+            width: fit-content
+            z-index: 10
+            cursor: pointer
+            
+            span
+                display: block
+                width: 30px
+                height: 5px
+                background-color: #333
+                margin-bottom: 5px
+        &:checked
+            &~ul    
+                display: block
+                left: -2vw
+                transition: left 0.3s ease-in-out

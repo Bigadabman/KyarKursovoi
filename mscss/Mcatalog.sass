@@ -1,0 +1,46 @@
+@import "../scss/_mixin"
+@import "_Mfooter"
+@import "_Mheader"
+@include card
+
+html
+  background-color: #f7f7f7
+  font-family: Helvetica, Arial, sans-serif
+
+
+.logo
+  opacity:1
+  fill-opacity: 0
+  stroke: $orange
+  stroke-dasharray: none
+
+
+.cont
+
+    div:has(.sidebar)
+        .nav
+            list-style: none
+            overflow-x: scroll
+            display: flex
+            .nav-item
+                .nav-submenu
+                    white-space: nowrap
+                   
+                .nav-link
+                    display: none
+
+
+    
+    .list
+        width: 100vw
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        overflow: auto
+        .card
+            display: inline-block
+            margin: 5px
+            width: 45%
+
+            img
+                width: 100%

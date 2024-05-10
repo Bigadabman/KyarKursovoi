@@ -1,3 +1,130 @@
+.logo {
+  opacity: 1;
+  fill-opacity: 0;
+  stroke: #fd8210;
+  stroke-dasharray: none;
+}
+
+html {
+  background-color: #f7f7f7;
+}
+
+header {
+  width: 100vw;
+}
+header img {
+  width: 27px;
+  height: 27px;
+}
+header a:has(img) {
+  position: absolute;
+  top: 1.5vh;
+  right: 18vw;
+}
+header div:has(h2) {
+  display: none;
+}
+header:nth-child(2) {
+  display: flex;
+}
+header:nth-child(2) div {
+  max-width: 50px;
+}
+header #nav {
+  position: relative;
+}
+header #nav ul {
+  position: fixed;
+  list-style: none;
+  z-index: 3;
+  left: -51vw;
+  width: 40vw;
+  background-color: #111;
+  padding: 2vh;
+  top: -2vh;
+  height: 100vh;
+  line-height: 2em;
+  transition: left 0.3s ease-in-out;
+}
+header #nav ul a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: x-large;
+}
+header #burger-toggle {
+  display: none;
+}
+header #burger-toggle + label {
+  display: block;
+  position: relative;
+  top: -6vh;
+  right: -85vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 10;
+  cursor: pointer;
+}
+header #burger-toggle + label span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+header #burger-toggle:checked ~ ul {
+  display: block;
+  left: -2vw;
+  transition: left 0.3s ease-in-out;
+}
+
+footer {
+  width: 100vw;
+  height: 400px;
+  padding: 10px;
+  background-color: #111;
+}
+footer .foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  flex-direction: column-reverse;
+  margin: 10px 0;
+  padding: 20px;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+footer span {
+  display: block;
+}
+footer div:has(span) {
+  color: white;
+}
+footer a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+footer a:hover {
+  filter: brightness(2);
+}
+footer a img {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+footer > div {
+  margin: 2em;
+}
+footer > div > div {
+  display: inline-block;
+  padding: 20px;
+}
+
 main .categories-block {
   background-color: #f7f7f7;
   margin: 0.5rem;
@@ -117,4 +244,4 @@ main .recommended-block .card p {
 main .recommended-block .card small {
   font-size: 14px;
   color: #666;
-}/*# sourceMappingURL=mobileMain.css.map */
+}/*# sourceMappingURL=Mvse.css.map */
