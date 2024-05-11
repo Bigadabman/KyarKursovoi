@@ -1,5 +1,5 @@
 header
-    width:100vw
+    width:98vw
     img
         width: 27px
         height: 27px
@@ -19,14 +19,13 @@ header
     
     #nav
         position: relative
-
         ul
             position: fixed
             list-style: none
             z-index: 3
             left:-51vw
             width: 40vw
-            background-color: $blue
+            background-color: $black
             padding: 2vh
             top: -2vh
             height: 100vh
@@ -34,7 +33,7 @@ header
             transition: left 0.3s ease-in-out
             a
                 text-decoration: none
-                color: #f7f7f7
+                color: $lightgrey
                 font-size: x-large
     #burger-toggle
         display: none
@@ -53,7 +52,7 @@ header
                 display: block
                 width: 30px
                 height: 5px
-                background-color: #333
+                background-color: $black
                 margin-bottom: 5px
         &:checked
             &~ul    

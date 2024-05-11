@@ -1,0 +1,40 @@
+@import "../scss/_variables"
+@media (max-width: 530px)
+    @import "_Mheader"
+    @import "_Mfooter"
+@media(min-width: 531px)
+    @import "../scss/_header"
+    @import "../scss/_footer"
+@import "../scss/_mixin"
+@include essential
+
+.itemInfo
+    padding: 2em 1em
+    h3
+        font-size: 28px
+        @media(min-width: 768px)
+            font-size: 40px 
+    p
+        font-size: 22px
+        @media(min-width: 768px)
+            font-size: 34px
+    img
+        width:90vw
+    button
+            height: 40px
+            width: 100%
+            background-color: $orange
+            border: 0
+            border-radius: 20px
+            font-size: 30px
+            @media(min-width: 768px)
+                height: 60px
+                border-radius: 30px
+                font-size: 50px
+            color:#f7f7f7
+.recommended-block 
+    display: flex
+    overflow-x: auto
+    @media(min-width: 768px)
+        font-size: 24px
+    @include card

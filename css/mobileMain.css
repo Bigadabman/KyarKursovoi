@@ -1,3 +1,142 @@
+header {
+  width: 98vw;
+}
+header img {
+  width: 27px;
+  height: 27px;
+}
+header a:has(img) {
+  position: absolute;
+  top: 1.5vh;
+  right: 18vw;
+}
+header div:has(h2) {
+  display: none;
+}
+header:nth-child(2) {
+  display: flex;
+}
+header:nth-child(2) div {
+  max-width: 50px;
+}
+header #nav {
+  position: relative;
+}
+header #nav ul {
+  position: fixed;
+  list-style: none;
+  z-index: 3;
+  left: -51vw;
+  width: 40vw;
+  background-color: #111;
+  padding: 2vh;
+  top: -2vh;
+  height: 100vh;
+  line-height: 2em;
+  transition: left 0.3s ease-in-out;
+}
+header #nav ul a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: x-large;
+}
+header #burger-toggle {
+  display: none;
+}
+header #burger-toggle + label {
+  display: block;
+  position: relative;
+  top: -6vh;
+  right: -85vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 10;
+  cursor: pointer;
+}
+header #burger-toggle + label span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #111;
+  margin-bottom: 5px;
+}
+header #burger-toggle:checked ~ ul {
+  display: block;
+  left: -2vw;
+  transition: left 0.3s ease-in-out;
+}
+
+footer {
+  position: relative;
+  left: -8px;
+  width: 99.9vw;
+  height: 350px;
+  background-color: #111;
+}
+footer .foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  flex-direction: column-reverse;
+  margin: 10px 0;
+  padding: 20px;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+footer span {
+  display: block;
+}
+footer div:has(span) {
+  color: white;
+  margin: 10px;
+}
+footer a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+footer a:hover {
+  filter: brightness(2);
+}
+footer a img {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+footer > div {
+  margin: 1em;
+}
+footer > div > div {
+  display: inline-block;
+  padding: 20px;
+}
+
+* {
+  padding: 0;
+}
+
+html {
+  background-color: #f7f7f7;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.logo {
+  opacity: 1;
+  fill-opacity: 0;
+  stroke: #fd8210;
+  stroke-dasharray: none;
+}
+
+main {
+  position: relative;
+  top: -30px;
+}
 main .categories-block {
   background-color: #f7f7f7;
   margin: 0.5rem;
@@ -19,10 +158,15 @@ main .categories-block a img {
   border-radius: 10px;
   height: 100%;
   position: relative;
-  left: -100%;
 }
-main .categories-block .champion {
+main .categories-block .goalKeeper {
   position: relative;
+}
+main .categories-block .goalKeeper img {
+  left: -80%;
+}
+main .categories-block .goalKeeper span {
+  left: 30%;
 }
 main .categories-block .category-name {
   position: absolute;
@@ -31,25 +175,39 @@ main .categories-block .category-name {
   font-size: 2em;
   color: #fd8210;
   text-decoration: none;
-  left: 30%;
   z-index: 2;
 }
 main .categories-block .sport-goods {
   position: relative;
 }
+main .categories-block .sport-goods img {
+  left: -100%;
+}
+main .categories-block .sport-goods span {
+  left: 15%;
+}
 main .categories-block .forwards, main .categories-block .defenders {
   position: relative;
+}
+main .categories-block .forwards img, main .categories-block .defenders img {
+  left: -60%;
+}
+main .categories-block .forwards span, main .categories-block .defenders span {
+  left: 20%;
+}
+main .categories-block .defenders img {
+  left: -130%;
 }
 main .guarantees-block {
   margin: 10px;
   padding: 10px;
   background-color: #f7f7f7;
-  width: 95vw;
+  width: 90vw;
 }
 main h2 {
-  margin-top: 0;
+  margin-top: 20px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
 }
 main .guarantees-grid {
   display: flex;
@@ -97,15 +255,11 @@ main .recommended-block .card {
   width: 290px;
   height: 380px;
   border: 1px solid #ccc;
-  margin-right: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-main .recommended-block .card img {
-  height: 250px;
-  width: 290px;
+  margin: 5px;
 }
 main .recommended-block .card h3 {
   margin: 10px 0;
@@ -116,5 +270,27 @@ main .recommended-block .card p {
 }
 main .recommended-block .card small {
   font-size: 14px;
-  color: #666;
+}
+main .recommended-block .card img {
+  height: 250px;
+  width: 290px;
+}
+@media (max-width: 1279px) and (min-width: 521px) {
+  main .recommended-block .card {
+    width: 240px;
+  }
+  main .recommended-block .card img {
+    width: 240px;
+  }
+}
+@media (max-width: 520px) {
+  main .recommended-block .card {
+    margin: 5px;
+    width: 185px;
+    height: 320px;
+  }
+  main .recommended-block .card img {
+    width: 185px;
+    height: 210px;
+  }
 }/*# sourceMappingURL=mobileMain.css.map */

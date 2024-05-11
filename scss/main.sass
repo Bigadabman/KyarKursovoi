@@ -1,20 +1,32 @@
-@import "_mixin"
 @import "_variables"
+@import "_mixin"
+@import "_header"
+@import "_footer"
+@include essential
+*
+    padding:0
+    margin: 0
 main
     margin: 0.5em
 
     .categories-block
-        background-color: #f7f7f7
+        background-color: $lightgrey
         margin: 0.5rem
         display: flex
         justify-content: space-around
         flex-wrap: wrap
+        @media(max-width:1279px)
+            margin: 0.1em
+
 
         a
             display: block
             margin: 0.3em
             height:57vh
-            border-radius: 30px           
+            border-radius: 30px     
+            @media(max-width:1279px)
+                margin: 0.1em      
+                height: 400px
             
             img
                 display: inline
@@ -23,9 +35,10 @@ main
                 height:100%
               
         
-        .champion
+        .goalKeeper
             width: 61vw
             position: relative
+
 
 
         .category-name
@@ -49,17 +62,20 @@ main
     .guarantees-block
         margin: 10px
         padding: 10px
-        background-color: #f7f7f7
+        background-color: $lightgrey
         width:95vw
+        @media(max-width:1279px)
+            width: 94vw
     h2
         margin-top: 0
         font-weight: bold
         font-size: 24px
+        padding: 10px
 
     .guarantees-grid
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
+        justify-content: space-around
 
     .guarantee-block
         position: relative

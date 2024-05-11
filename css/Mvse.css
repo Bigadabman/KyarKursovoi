@@ -1,3 +1,8 @@
+html {
+  background-color: #f7f7f7;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .logo {
   opacity: 1;
   fill-opacity: 0;
@@ -5,12 +10,8 @@
   stroke-dasharray: none;
 }
 
-html {
-  background-color: #f7f7f7;
-}
-
 header {
-  width: 100vw;
+  width: 98vw;
 }
 header img {
   width: 27px;
@@ -78,9 +79,10 @@ header #burger-toggle:checked ~ ul {
 }
 
 footer {
-  width: 100vw;
-  height: 400px;
-  padding: 10px;
+  position: relative;
+  left: -8px;
+  width: 99.9vw;
+  height: 350px;
   background-color: #111;
 }
 footer .foot {
@@ -96,13 +98,14 @@ footer .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 footer span {
   display: block;
 }
 footer div:has(span) {
   color: white;
+  margin: 10px;
 }
 footer a {
   display: inline-block;
@@ -118,13 +121,17 @@ footer a img {
   fill: #fff;
 }
 footer > div {
-  margin: 2em;
+  margin: 1em;
 }
 footer > div > div {
   display: inline-block;
   padding: 20px;
 }
 
+main {
+  position: relative;
+  top: -30px;
+}
 main .categories-block {
   background-color: #f7f7f7;
   margin: 0.5rem;
@@ -151,6 +158,9 @@ main .categories-block a img {
 main .categories-block .champion {
   position: relative;
 }
+main .categories-block .champion span {
+  left: 30%;
+}
 main .categories-block .category-name {
   position: absolute;
   align-self: center;
@@ -158,25 +168,30 @@ main .categories-block .category-name {
   font-size: 2em;
   color: #fd8210;
   text-decoration: none;
-  left: 30%;
   z-index: 2;
 }
 main .categories-block .sport-goods {
   position: relative;
 }
+main .categories-block .sport-goods span {
+  left: 15%;
+}
 main .categories-block .forwards, main .categories-block .defenders {
   position: relative;
+}
+main .categories-block .forwards span, main .categories-block .defenders span {
+  left: 20%;
 }
 main .guarantees-block {
   margin: 10px;
   padding: 10px;
   background-color: #f7f7f7;
-  width: 95vw;
+  width: 90vw;
 }
 main h2 {
-  margin-top: 0;
+  margin-top: 20px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
 }
 main .guarantees-grid {
   display: flex;
@@ -220,19 +235,31 @@ main .recommended-block a {
   text-decoration: none;
   color: #000;
 }
+main .recommended-block .card img {
+  height: 250px;
+  width: 290px;
+}
 main .recommended-block .card {
   width: 290px;
   height: 380px;
   border: 1px solid #ccc;
-  margin-right: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: inline-block;
+  margin: 10px;
 }
-main .recommended-block .card img {
-  height: 250px;
-  width: 290px;
+@media (max-width: 520px) {
+  main .recommended-block .card {
+    margin: 5px;
+    width: 45%;
+    height: 320px;
+  }
+  main .recommended-block .card img {
+    width: 100%;
+    height: 210px;
+  }
 }
 main .recommended-block .card h3 {
   margin: 10px 0;

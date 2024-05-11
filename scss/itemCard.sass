@@ -1,4 +1,11 @@
 @import "_variables"
+@import "_mixin"
+
+@import "_header"
+@import "_footer"
+@include essential
+
+
 .itemInfo
     padding: 0px 20px
     display: flex
@@ -19,7 +26,6 @@
         padding: 10px 20px
         flex: 1
         width: 600px
-
         button
             height: 40px
             width: 100%
@@ -27,5 +33,13 @@
             border: 0
             border-radius: 20px
             font-size: 30px
-            color:#f7f7f7
+            color:$lightgrey
+            &:hover
+                transform: translate(0px,5px)
+                box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5) inset
+.recommended-block 
+    display: flex
+    overflow-x: auto
+    font-size: 24px
+    @include card
             

@@ -1,9 +1,13 @@
 @import "_variables"
 footer 
-    width:85vw
-    height: 160px
+    position: relative
+    left: -8px
+    width:91.5vw
+    height: 100px
     padding: 50px
-    background-color: $blue
+    background-color: $black
+    @media(max-width:1279px)
+        padding: 40px
 
     .logo
         display: flex
@@ -31,7 +35,9 @@ footer
     >div
         >div
             display: inline-block
-            align-self: top
+            margin-right: 20px
 
-
+    .contacts
+        position: relative
+        top: -30px
     

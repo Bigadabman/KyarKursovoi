@@ -1,10 +1,15 @@
-@import "../scss/_mixin"
 @import "../scss/_variables"
+@import "../scss/_mixin"
 
+@import "_Mheader"
+@import "_Mfooter"
+@include essential
 
 main
+    position: relative
+    top: -30px
     .categories-block
-        background-color: #f7f7f7
+        background-color: $lightgrey
         margin: 0.5rem
         display: flex
         justify-content: space-around
@@ -24,11 +29,14 @@ main
                 border-radius: 10px
                 height: 100%
                 position: relative
-                left:-100%
+                
         
-        .champion
-            
+        .goalKeeper
+            img
+                left:-80%
             position: relative
+            span
+                left: 30%
 
 
         .category-name
@@ -38,27 +46,36 @@ main
             font-size: 2em
             color: $orange
             text-decoration: none
-            left: 30%
             z-index: 2
 
 
         .sport-goods
-            
+            img
+                left:-100%
             position: relative
+            span
+                left: 15%
 
         .forwards, .defenders
+            img
+                left:-60%
             position: relative
+            span
+                left: 20%
+        .defenders
+            img
+                left: -130%
             
 
     .guarantees-block
         margin: 10px
         padding: 10px
-        background-color: #f7f7f7
-        width:95vw
+        background-color: $lightgrey
+        width:90vw
     h2
-        margin-top: 0
+        margin-top: 20px
         font-weight: bold
-        font-size: 18px
+        font-size: 26px
 
     .guarantees-grid
         display: flex

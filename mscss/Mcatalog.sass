@@ -1,10 +1,11 @@
+@import "../scss/_variables"
 @import "../scss/_mixin"
 @import "_Mfooter"
 @import "_Mheader"
 @include card
 
 html
-  background-color: #f7f7f7
+  background-color: $lightgrey
   font-family: Helvetica, Arial, sans-serif
 
 
@@ -16,15 +17,16 @@ html
 
 
 .cont
-
     div:has(.sidebar)
         .nav
             list-style: none
             overflow-x: scroll
             display: flex
+            padding: 0
             .nav-item
                 .nav-submenu
                     white-space: nowrap
+                    margin: 0 0.2em
                    
                 .nav-link
                     display: none
@@ -32,15 +34,11 @@ html
 
     
     .list
-        width: 100vw
+        width: 96vw
         display: flex
         flex-wrap: wrap
-        justify-content: flex-start
+        justify-content: space-between
         overflow: auto
         .card
             display: inline-block
-            margin: 5px
-            width: 45%
-
-            img
-                width: 100%
+            
