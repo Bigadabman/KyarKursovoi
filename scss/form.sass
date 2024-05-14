@@ -1,0 +1,47 @@
+@import "_variables.sass"
+@import "_mixin"
+@media (min-width: 769px)
+    @import "_header"
+
+@media (max-width: 768px)
+    @import "../mscss/_Mheader"
+@include essential
+
+main
+    display: flex
+    justify-content: center
+    form
+        width: 60vw
+        height: 270px
+        border-radius: 10px
+        padding: 16px
+        h2 
+            text-align: center
+        label
+            font-size: 20px
+
+        input
+            border-radius: 10px
+            height: 20px
+            padding: 16px 
+            display: block
+            width: 100%
+            font-size: 16px
+            border: black 1px solid
+        .field
+            margin: 10px 0
+        
+        button
+            position: relative
+            left: 50%
+            bottom: 0%
+            margin: 10px
+            width: 53%
+            font-size: 16px
+            border-radius: 10px
+            padding: 10px 20px
+            background-color: $orange
+            color: white
+            border: none
+        
+    

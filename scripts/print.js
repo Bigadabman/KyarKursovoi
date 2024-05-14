@@ -1,3 +1,5 @@
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCategory = JSON.parse(urlParams.get('item'));
 const navSubmenuLinks = document.querySelectorAll('.nav-submenu-link');
 const xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET", "catalog.xml", true);
@@ -10,13 +12,15 @@ xmlhttp.onload = function() {
     const listBlock = document.querySelector('.list');
     listBlock.innerHTML = '';
 
+
     for (let i = 0; i < items.length; i++) {
       const item = items[i];
       const name = item.getElementsByTagName("name")[0].childNodes[0].nodeValue;
       const price = item.getElementsByTagName("price")[0].childNodes[0].nodeValue;
       const image = item.getElementsByTagName("img")[0].childNodes[0].nodeValue;
       const description = item.getElementsByTagName("description")[0].childNodes[0].nodeValue;
-
+      const category = item.getElementsByTagName("category")[0].childNodes[0].nodeValue;
+      if(category==selectedCategory.category){
         const card = document.createElement('a');
         card.className = 'card';
         card.href = `itemCard.html?item=${JSON.stringify({ name, price, image, description })}`;
@@ -34,7 +38,7 @@ xmlhttp.onload = function() {
         card.appendChild(p);
 
         listBlock.appendChild(card);
-      
+      }
       }
     }
   }

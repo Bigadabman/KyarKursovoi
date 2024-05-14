@@ -113,7 +113,25 @@ header #burger-toggle + label span {
 header #burger-toggle:checked ~ ul {
   display: block;
   left: -2vw;
-  transition: left 0.3s ease-in-out;
+  transition: left 1s ease-in-out;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #f7f7f7;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.logo {
+  opacity: 1;
+  fill-opacity: 0;
+  stroke: #fd8210;
+  stroke-dasharray: none;
 }
 
 a {
@@ -145,7 +163,7 @@ a {
   height: 250px;
   width: 290px;
 }
-@media (max-width: 1279px) and (min-width: 521px) {
+@media (max-width: 1279px) and (min-width: 769px) {
   .card {
     width: 240px;
   }
@@ -153,7 +171,7 @@ a {
     width: 240px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .card {
     margin: 5px;
     width: 185px;

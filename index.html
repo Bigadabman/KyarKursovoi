@@ -6,7 +6,7 @@
     <title>EliteFooty</title>
     <link rel="stylesheet" media="only screen and (min-width: 769px)" href="css/main.css">
     <link rel="stylesheet" media="only screen and (max-width: 768px)" href="css/mobileMain.css">
-
+    
   </head>
 <body>
   <header>
@@ -51,15 +51,15 @@
 <span></span>
 </label>
           <ul>             
-          <li><a href="catalog.html">Нападающие</a></li>
-          <li><a href="catalog.html">Защитники</a></li>
-          <li><a href="catalog.html">Вратари</a></li>
-          <li><a href="catalog.html">Мячи</a></li>
+          <li><a href='catalog.html?item={"category":"Нападающие"}'>Нападающие</a></li>
+          <li><a href='catalog.html?item={"category":"Защитники"}'>Защитники</a></li>
+          <li><a href='catalog.html?item={"category":"Вратари"}'>Вратари</a></li>
+          <li><a href='catalog.html?item={"category":"Мячи"}'>Мячи</a></li>
         </ul>
 
       </nav>
             
-        <a href="#">
+        <a href="form.html">
             <img src="svg/profile.svg" alt="Корзина">
         </a>
 
@@ -70,24 +70,24 @@
 <h2>Категории</h2>
     <div class="categories-block">
  
-        <a href="catalog.html" class="goalKeeper">
+        <a href='catalog.html?item={"category":"Вратари"}' class="goalKeeper">
           <span class="category-name">Вратари</span>
           <img src="img/goalKeepers.jpeg" alt="Вратари"></img>
           
         </a>
-        <a href="catalog.html" class="sport-goods">
+        <a href='catalog.html?item={"category":"Товары"}' class="sport-goods">
           <span class="category-name">Спорт товары</span>
           <img src="img/sportGoods.jpg" alt="Вратари"></img>
 
         </a>
 
   
-              <a href="catalog.html" class="forwards">
+              <a href='catalog.html?item={"category":"Нападающие"}' class="forwards">
           <span class="category-name">Нападающие</span>
           <img src="img/attakers.jpg" alt="Вратари"></img>
           
         </a>
-        <a href="catalog.html" class="defenders">
+        <a href='catalog.html?item={"category":"Защитники"}' class="defenders">
           <span class="category-name">Защитники</span>
           <img src="img/defenders.jpg" alt="Вратари"></img>
           
@@ -195,6 +195,7 @@
             </div>
         </div>
     </footer>
-  <script src="scripts/recScript.js"></script>
+  <script src="scripts/recScript.js" async></script>
+  <script src="scripts/fetch.js" defer></script>
 </body>
 </html>

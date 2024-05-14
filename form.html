@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EliteFooty</title>
+    <link rel="stylesheet"  href="css/form.css">
+
 </head>
 <body>
 
@@ -40,92 +42,45 @@
                </svg>
                </a>
             </div>
-
-            <nav class="nav-links">
-                <a href="#">Нападающие</a>
-                <a href="#">Защитники</a>
-                <a href="#">Чемпионы</a>
-                <a href="#">Спорт товары</a>
-            </nav>
+    
+            <nav class="nav-links" id="nav">
+              <input type="checkbox" id="burger-toggle" />
+    <label for="burger-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    </label>
+              <ul>             
+              <li><a href='catalog.html?item={"category":"Нападающие"}'>Нападающие</a></li>
+              <li><a href='catalog.html?item={"category":"Защитники"}'>Защитники</a></li>
+              <li><a href='catalog.html?item={"category":"Вратари"}'>Вратари</a></li>
+              <li><a href='catalog.html?item={"category":"Мячи"}'>Мячи</a></li>
+            </ul>
+    
+          </nav>
                 
-            <a href="#">
-                <img src="svg/cart.svg" alt="Корзина">
+            <a href="form.html">
+                <img src="svg/profile.svg" alt="Корзина">
             </a>
-
+    
         </div>
     </header>
 
     <main>
         <form>
-            
+            <h2>Присоединиться</h2>
+            <div class="field">
+                <label>Email:</label>
+                <input id="email" type="email">
+                </div>
+                <div class="field">
+                <label>Пароль:</label>
+                <input id="pass" type="password">
+                </div>
             <button type="submit">Отправить</button>
         </form>
 
     </main>
-    
-    <footer>
-        <div class="foot">
-            <div>
-                <div class="logo">
-                    <a href="index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" class="logo">
-                            <g
-                         transform="translate(-171.3744,-7.7606395)"
-                            style="opacity:1;stroke-width:1.5;stroke-dasharray:none">
-                           <path
-                             
-                              d="m 178.57213,8.464018 -6.54089,-0.042708 0.009,10.802333 6.5968,0.05155"
-                             
-                              />
-                           <path
-                              
-                              d="m 171.40861,13.896694 6.60361,-0.04942"
-                             
-                             />
-                           <path
-                              
-                              d="m 186.92956,8.4066734 h -7.23621 V 19.931473"
-                               />
-                           <path
-                             
-                              d="m 179.04732,13.846058 h 6.98832"
-                               />
-                         </g>
-                       </svg>
-                       </a>
-                </div>
-                <div>
-                    <span>
-                        &#169 2024 "EliteFooty"
-                    </span>
-
-                    <div>
-                        <a href="https://vk.com/bigadabman">
-                            <img src="svg/vk.svg" alt="ВКонтакте">
-                        </a>
-                        <a href="https://t.me/B1Gadabman">
-                            <img src="svg/telegram.svg" alt="Телеграм">
-                        </a>
-                        <a href="viber://chat?number=%2B375293687951">
-                            <img src="svg/viber.svg" alt="Вайбер">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-            <div>
-                
-                <div>
-                    <h3>Контакты</h3>
-
-                    <span>+375293687951</span>
-                    <span>г. Минск, ул. Люцинская 9</span>
-                </div>
-    
-               
-            </div>
-        </div>
-    </footer>
 
 </body>
 </html>
