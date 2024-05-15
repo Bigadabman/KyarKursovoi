@@ -41,4 +41,3 @@ const p2 = document.createElement('p');
           cont.appendChild(p2);
 
           infoBlock.appendChild(cont);
-
