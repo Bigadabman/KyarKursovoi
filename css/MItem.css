@@ -14,11 +14,9 @@
   header div:has(h2) {
     display: none;
   }
-  header:nth-child(2) {
-    display: flex;
-  }
-  header:nth-child(2) div {
+  header div:nth-child(2) div {
     max-width: 50px;
+    margin: 10px;
   }
   header #nav {
     position: relative;
@@ -27,11 +25,11 @@
     position: fixed;
     list-style: none;
     z-index: 3;
-    left: -51vw;
-    width: 40vw;
+    left: -55vw;
+    width: 45vw;
     background-color: #111;
     padding: 2vh;
-    top: -2vh;
+    top: -1vh;
     height: 100vh;
     line-height: 2em;
     transition: left 0.3s ease-in-out;
@@ -47,7 +45,7 @@
   header #burger-toggle + label {
     display: block;
     position: relative;
-    top: -6vh;
+    top: -7vh;
     right: -85vw;
     width: -moz-fit-content;
     width: fit-content;
@@ -68,8 +66,7 @@
   }
   footer {
     position: relative;
-    left: -8px;
-    width: 99.9vw;
+    width: 100vw;
     height: 350px;
     background-color: #111;
   }
@@ -79,8 +76,6 @@
     align-items: center;
     height: 100%;
     flex-direction: column-reverse;
-    margin: 10px 0;
-    padding: 20px;
   }
   footer .logo {
     display: flex;
@@ -120,7 +115,6 @@
   header {
     width: 100vw;
     position: relative;
-    left: -8px;
   }
   header div:nth-child(2) {
     padding: 10px;
@@ -128,6 +122,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  header div:nth-child(2) div {
+    margin: 15px;
   }
   header div:nth-child(2) #burger-toggle {
     display: none;
@@ -187,8 +184,7 @@
 @media (min-width: 531px) {
   footer {
     position: relative;
-    left: -8px;
-    width: 91.5vw;
+    width: 100vw;
     height: 100px;
     padding: 50px;
     background-color: #111;
@@ -200,6 +196,9 @@
   }
 }
 @media (min-width: 531px) {
+  footer h3 {
+    margin-bottom: 20px;
+  }
   footer .logo {
     display: flex;
     justify-content: center;
@@ -217,21 +216,17 @@
     width: 28px;
     height: 28px;
   }
-  footer a:hover {
-    filter: brightness(2);
-  }
   footer a img {
     width: 100%;
     height: 100%;
-    fill: #fff;
   }
   footer > div > div {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
   footer .contacts {
     position: relative;
-    top: -30px;
   }
 }
 * {
@@ -243,6 +238,7 @@ html {
   background-color: #f7f7f7;
   font-family: Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .logo {
@@ -254,6 +250,7 @@ html {
 
 .itemInfo {
   padding: 2em 1em;
+  width: 90%;
 }
 .itemInfo h3 {
   font-size: 28px;
@@ -272,7 +269,14 @@ html {
   }
 }
 .itemInfo img {
-  width: 90vw;
+  width: 100%;
+}
+.itemInfo h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+.itemInfo p {
+  margin: 7px 0;
 }
 .itemInfo button {
   height: 40px;
@@ -281,6 +285,7 @@ html {
   border: 0;
   border-radius: 20px;
   font-size: 30px;
+  margin: 15px 0;
   color: #f7f7f7;
 }
 @media (min-width: 768px) {

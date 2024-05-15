@@ -27,13 +27,6 @@ const p = document.createElement('p');
           p.textContent = price + ' BYN';
           cont.appendChild(p);
 
-const description = selectedItem.description;
-const p2 = document.createElement('p');
-          p2.textContent = description;
-          cont.appendChild(p2);
-
-          infoBlock.appendChild(cont);
-
 const button =document.createElement('button');
 button.textContent='Заказать';
 
@@ -41,3 +34,11 @@ const a=document.createElement('a');
 a.href='form.html';
 a.appendChild(button);
 cont.appendChild(a);
+
+const description = selectedItem.description;
+const p2 = document.createElement('p');
+          p2.textContent = description;
+          cont.appendChild(p2);
+
+          infoBlock.appendChild(cont);
+

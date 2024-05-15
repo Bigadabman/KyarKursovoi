@@ -1,3 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #f7f7f7;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.logo {
+  opacity: 1;
+  fill-opacity: 0;
+  stroke: #fd8210;
+  stroke-dasharray: none;
+}
+
 header {
   width: 98vw;
 }
@@ -13,11 +32,9 @@ header a:has(img) {
 header div:has(h2) {
   display: none;
 }
-header:nth-child(2) {
-  display: flex;
-}
-header:nth-child(2) div {
+header div:nth-child(2) div {
   max-width: 50px;
+  margin: 10px;
 }
 header #nav {
   position: relative;
@@ -26,11 +43,11 @@ header #nav ul {
   position: fixed;
   list-style: none;
   z-index: 3;
-  left: -51vw;
-  width: 40vw;
+  left: -55vw;
+  width: 45vw;
   background-color: #111;
   padding: 2vh;
-  top: -2vh;
+  top: -1vh;
   height: 100vh;
   line-height: 2em;
   transition: left 0.3s ease-in-out;
@@ -46,7 +63,7 @@ header #burger-toggle {
 header #burger-toggle + label {
   display: block;
   position: relative;
-  top: -6vh;
+  top: -7vh;
   right: -85vw;
   width: -moz-fit-content;
   width: fit-content;
@@ -68,8 +85,7 @@ header #burger-toggle:checked ~ ul {
 
 footer {
   position: relative;
-  left: -8px;
-  width: 99.9vw;
+  width: 100vw;
   height: 350px;
   background-color: #111;
 }
@@ -79,8 +95,6 @@ footer .foot {
   align-items: center;
   height: 100%;
   flex-direction: column-reverse;
-  margin: 10px 0;
-  padding: 20px;
 }
 footer .logo {
   display: flex;
@@ -114,24 +128,6 @@ footer > div {
 footer > div > div {
   display: inline-block;
   padding: 20px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  background-color: #f7f7f7;
-  font-family: Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
-}
-
-.logo {
-  opacity: 1;
-  fill-opacity: 0;
-  stroke: #fd8210;
-  stroke-dasharray: none;
 }
 
 main {
@@ -208,6 +204,7 @@ main h2 {
   margin-top: 20px;
   font-weight: bold;
   font-size: 26px;
+  padding: 10px;
 }
 main .guarantees-grid {
   display: flex;

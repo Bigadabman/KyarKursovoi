@@ -1,7 +1,6 @@
 header {
   width: 100vw;
   position: relative;
-  left: -8px;
 }
 header div:nth-child(2) {
   padding: 10px;
@@ -9,6 +8,9 @@ header div:nth-child(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header div:nth-child(2) div {
+  margin: 15px;
 }
 header div:nth-child(2) #burger-toggle {
   display: none;
@@ -67,8 +69,7 @@ header h2 {
 
 footer {
   position: relative;
-  left: -8px;
-  width: 91.5vw;
+  width: 100vw;
   height: 100px;
   padding: 50px;
   background-color: #111;
@@ -77,6 +78,9 @@ footer {
   footer {
     padding: 40px;
   }
+}
+footer h3 {
+  margin-bottom: 20px;
 }
 footer .logo {
   display: flex;
@@ -95,21 +99,17 @@ footer a {
   width: 28px;
   height: 28px;
 }
-footer a:hover {
-  filter: brightness(2);
-}
 footer a img {
   width: 100%;
   height: 100%;
-  fill: #fff;
 }
 footer > div > div {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 footer .contacts {
   position: relative;
-  top: -30px;
 }
 
 * {
@@ -121,6 +121,7 @@ html {
   background-color: #f7f7f7;
   font-family: Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .logo {
@@ -136,6 +137,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  min-height: 46vh;
+  margin-bottom: 2em;
 }
 .itemInfo .imgBlock {
   width: 600px;
@@ -150,6 +153,13 @@ html {
   flex: 1;
   width: 600px;
 }
+.itemInfo .info h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+.itemInfo .info p {
+  margin: 15px 0;
+}
 .itemInfo .info button {
   height: 40px;
   width: 100%;
@@ -157,6 +167,7 @@ html {
   border: 0;
   border-radius: 20px;
   font-size: 30px;
+  margin: 15px 0;
   color: #f7f7f7;
 }
 .itemInfo .info button:active {

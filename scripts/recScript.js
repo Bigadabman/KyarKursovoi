@@ -1,5 +1,3 @@
-const recItems = [];
-
 const xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -16,28 +14,24 @@ xmlhttp.onreadystatechange = function() {
             const description=item.getElementsByTagName("description")[0].childNodes[0].nodeValue;
 
             if (rec == 1) {
-                recItems.push({ name, price, image,description });
+                const card = document.createElement('a');
+                card.className = 'card';
+                card.href = `itemCard.html?item=${JSON.stringify(item)}`;
+    
+                const img = document.createElement('img');
+                img.src = 'img/' + image;
+                card.appendChild(img);
+    
+                const h3 = document.createElement('h3');
+                h3.textContent = name;
+                card.appendChild(h3);
+    
+                const p = document.createElement('p');
+                p.textContent = price + ' BYN';
+                card.appendChild(p);
+    
+                recBlock.appendChild(card);
             }
-        }
-
-        for (const item of recItems) {
-            const card = document.createElement('a');
-            card.className = 'card';
-            card.href = `itemCard.html?item=${JSON.stringify(item)}`;
-
-            const img = document.createElement('img');
-            img.src = 'img/' + item.image;
-            card.appendChild(img);
-
-            const h3 = document.createElement('h3');
-            h3.textContent = item.name;
-            card.appendChild(h3);
-
-            const p = document.createElement('p');
-            p.textContent = item.price + ' BYN';
-            card.appendChild(p);
-
-            recBlock.appendChild(card);
         }
     }
 };

@@ -2,7 +2,6 @@
   header {
     width: 100vw;
     position: relative;
-    left: -8px;
   }
   header div:nth-child(2) {
     padding: 10px;
@@ -10,6 +9,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  header div:nth-child(2) div {
+    margin: 15px;
   }
   header div:nth-child(2) #burger-toggle {
     display: none;
@@ -82,11 +84,9 @@
   header div:has(h2) {
     display: none;
   }
-  header:nth-child(2) {
-    display: flex;
-  }
-  header:nth-child(2) div {
+  header div:nth-child(2) div {
     max-width: 50px;
+    margin: 10px;
   }
   header #nav {
     position: relative;
@@ -95,11 +95,11 @@
     position: fixed;
     list-style: none;
     z-index: 3;
-    left: -51vw;
-    width: 40vw;
+    left: -55vw;
+    width: 45vw;
     background-color: #111;
     padding: 2vh;
-    top: -2vh;
+    top: -1vh;
     height: 100vh;
     line-height: 2em;
     transition: left 0.3s ease-in-out;
@@ -115,7 +115,7 @@
   header #burger-toggle + label {
     display: block;
     position: relative;
-    top: -6vh;
+    top: -7vh;
     right: -85vw;
     width: -moz-fit-content;
     width: fit-content;
@@ -144,6 +144,7 @@ html {
   background-color: #f7f7f7;
   font-family: Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .logo {
@@ -161,7 +162,6 @@ main form {
   width: 60vw;
   height: 270px;
   border-radius: 10px;
-  padding: 16px;
 }
 main form h2 {
   text-align: center;
@@ -169,24 +169,26 @@ main form h2 {
 main form label {
   font-size: 20px;
 }
+main form .field {
+  margin: 10px 0;
+  width: 100%;
+}
 main form input {
   border-radius: 10px;
-  height: 20px;
+  box-sizing: border-box;
+  height: 56px;
   padding: 16px;
   display: block;
   width: 100%;
   font-size: 16px;
   border: black 1px solid;
 }
-main form .field {
-  margin: 10px 0;
-}
 main form button {
   position: relative;
   left: 50%;
   bottom: 0%;
-  margin: 10px;
-  width: 53%;
+  margin: 10px 0;
+  width: 50%;
   font-size: 16px;
   border-radius: 10px;
   padding: 10px 20px;

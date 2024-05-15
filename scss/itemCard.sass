@@ -1,21 +1,23 @@
 @import "_variables"
 @import "_mixin"
-
 @import "_header"
 @import "_footer"
 @include essential
 
+    
 .itemInfo
     padding: 0px 20px
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: flex-start
-
+    min-height: 46vh
+    margin-bottom: 2em
     .imgBlock
 
         width:600px
         flex: 1
+
 
         img 
             width: 100%
@@ -25,6 +27,11 @@
         padding: 10px 20px
         flex: 1
         width: 600px
+        h3
+            font-size: 24px
+            margin: 15px 0
+        p
+            margin: 15px 0
         button
             height: 40px
             width: 100%
@@ -32,6 +39,7 @@
             border: 0
             border-radius: 20px
             font-size: 30px
+            margin: 15px 0
             color:$lightgrey
             &:active
                 transform: translate(0px,5px)

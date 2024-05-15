@@ -1,14 +1,14 @@
 @import "_variables"
 footer 
     position: relative
-    left: -8px
-    width:91.5vw
+    width: 100vw
     height: 100px
     padding: 50px
     background-color: $black
     @media(max-width:1279px)
         padding: 40px
-
+    h3
+        margin-bottom: 20px
     .logo
         display: flex
         justify-content: center
@@ -25,19 +25,17 @@ footer
         display: inline-block
         width: 28px
         height: 28px
-        &:hover
-            filter: brightness(2) // Это делает изображение немного ярче при наведении
+        
         img
             width: 100%
             height: 100%
-            fill: #fff // Устанавливаем цвет заливки в белый
 
     >div
         >div
             display: inline-block
             margin-right: 20px
+            margin-bottom: 20px
 
     .contacts
         position: relative
-        top: -30px
     

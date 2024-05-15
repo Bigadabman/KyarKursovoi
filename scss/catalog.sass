@@ -1,6 +1,5 @@
 @import "_variables.sass"
 @import "_mixin"
-
 @import "_header"
 @import "_footer"
 @include card
@@ -22,14 +21,17 @@
             
             .nav-link 
                 font-size:24px
+                @media(min-width: 769px)
+                    border-top: 2px
+                    border-top-color: grey
+                    border-top-style: solid
                 @media(max-width:1279px)
                     font-size:20px
             a
                 display: block
                 width:100%
                 height: 50px
-                background-color: #f2f2f2
-                border: 1px black solid
+                
                 margin: 0
                 text-align: center
             .nav-submenu-link
