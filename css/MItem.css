@@ -125,6 +125,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
   }
   header div:nth-child(2) div {
     margin: 15px;
@@ -331,6 +332,7 @@ html {
 }
 .recommended-block .card h3 {
   margin: 10px 0;
+  font-size: 28px;
 }
 .recommended-block .card p {
   margin: 0;

@@ -7,6 +7,7 @@ header div:nth-child(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 20px;
 }
 header div:nth-child(2) div {
   margin: 15px;
@@ -190,7 +191,7 @@ main .categories-block .forwards, main .categories-block .defenders {
 main h2 {
   margin-top: 0;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
   padding: 10px;
 }
 main .guarantees-grid {
@@ -226,11 +227,11 @@ main .guarantee-block img {
 }
 main .guarantee-block h3 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 main .guarantee-block p {
-  font-size: 14px;
+  font-size: 20px;
   color: #666;
   line-height: 1.5;
 }
@@ -259,6 +260,7 @@ main .recommended-block .card:hover {
 }
 main .recommended-block .card h3 {
   margin: 10px 0;
+  font-size: 28px;
 }
 main .recommended-block .card p {
   margin: 0;

@@ -269,6 +269,7 @@ main .recommended-block .card:hover {
 }
 main .recommended-block .card h3 {
   margin: 10px 0;
+  font-size: 28px;
 }
 main .recommended-block .card p {
   margin: 0;
