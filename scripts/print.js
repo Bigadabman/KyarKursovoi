@@ -20,7 +20,7 @@ xmlhttp.onload = function() {
       const image = item.getElementsByTagName("img")[0].childNodes[0].nodeValue;
       const description = item.getElementsByTagName("description")[0].childNodes[0].nodeValue;
       const category = item.getElementsByTagName("category")[0].childNodes[0].nodeValue;
-      if((category==selectedCategory.category) || ((selectedCategory.category=='Товары') && (category=='Мячи' || category=='Шорты' || category=='Бутсы' || category=='Майки'))){
+      if((selectedCategory.category=='Полный')||(category==selectedCategory.category) || ((selectedCategory.category=='Товары') && (category=='Мячи' || category=='Шорты' || category=='Бутсы' || category=='Майки'))){
         const card = document.createElement('a');
         card.className = 'card';
         card.href = `itemCard.html?item=${JSON.stringify({ name, price, image, description })}`;

@@ -1,6 +1,5 @@
 header {
   width: 100vw;
-  position: relative;
 }
 header div:nth-child(2) {
   padding: 10px;
@@ -20,6 +19,9 @@ header div:nth-child(2) div {
 }
 header div:nth-child(2) nav {
   flex: 1;
+}
+header div:nth-child(2) nav .mob {
+  display: none;
 }
 header div:nth-child(2) nav ul {
   display: flex;
@@ -119,7 +121,7 @@ footer .contacts {
 
 html {
   background-color: #f7f7f7;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open sans", sans-serif;
   overflow-x: hidden;
   width: 100vw;
 }
@@ -138,7 +140,7 @@ main .categories-block {
   background-color: #f7f7f7;
   margin: 0.5em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 @media (max-width: 1279px) {
@@ -165,7 +167,7 @@ main .categories-block a img {
   height: 100%;
 }
 main .categories-block .goalKeeper {
-  width: 61vw;
+  width: 62vw;
   position: relative;
 }
 main .categories-block .category-name {
@@ -183,18 +185,7 @@ main .categories-block .sport-goods {
 }
 main .categories-block .forwards, main .categories-block .defenders {
   position: relative;
-  width: 47vw;
-}
-main .guarantees-block {
-  margin: 10px;
-  padding: 10px;
-  background-color: #f7f7f7;
-  width: 95vw;
-}
-@media (max-width: 1279px) {
-  main .guarantees-block {
-    width: 94vw;
-  }
+  width: 47.5vw;
 }
 main h2 {
   margin-top: 0;
@@ -203,9 +194,15 @@ main h2 {
   padding: 10px;
 }
 main .guarantees-grid {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+@media (max-width: 1279px) {
+  main .guarantees-grid {
+    width: 94vw;
+  }
 }
 main .guarantee-block {
   position: relative;
@@ -240,6 +237,7 @@ main .guarantee-block p {
 main .recommended-block {
   display: flex;
   overflow-x: auto;
+  padding-top: 10px;
 }
 main .recommended-block a {
   text-decoration: none;
@@ -254,6 +252,10 @@ main .recommended-block .card {
   flex-direction: column;
   align-items: center;
   margin: 5px;
+  transition: transform 0.3s;
+}
+main .recommended-block .card:hover {
+  transform: translateY(-10px);
 }
 main .recommended-block .card h3 {
   margin: 10px 0;

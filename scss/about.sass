@@ -1,0 +1,22 @@
+@import "_variables.sass"
+@import "_mixin"
+@media (min-width: 769px)
+    @import "_header"
+
+    p
+        font-size: 24px
+
+
+@media (max-width: 768px)
+    @import "../mscss/_Mheader"
+
+    p
+        font-size: 14px
+@include essential
+
+
+main
+    padding: 2em
+    p
+        margin: 1em 0
+        text-indent: 3em
